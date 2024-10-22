@@ -42,10 +42,10 @@ header h1 img{
     background: linear-gradient(180deg, #FFE866 0%, #FFA600 100%);
     border: 4px solid #0E2E42;
     border-radius: 16px;
-    font-family: var(--fonte-cartas);
+    font-family: var(--fonte-titulo-cartas);
     font-weight: 700;
-    font-size: 1.7rem;
-    padding: 1px 20px;
+    font-size: 1.4rem;
+    padding: 1px 15px;
     height: 5rem;
 }
 
@@ -56,8 +56,11 @@ header h1 img{
 .personagens {
     display: flex;
     flex-wrap: wrap;
+    justify-content:center ;
     gap: 1.5rem;
-    max-width: 1357px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.527);
+    padding: 1rem;
 }
 
 .personagem {
@@ -90,21 +93,27 @@ header h1 img{
 .level {
     height: 22.86px;
     display: flex;
-    width: 74.66px;
+    width: 120.66px;
     align-items: center;
     margin-top: 8px;
     margin-right: 8px;
     position: relative;
+    justify-content: end;
     z-index: 99;
 }
 
 .aumentar-level,
 .diminuir-level {
-    font-family: var(--fonte-textos);
-    color: #817462;
-    font-size: 18px;
+    font-family: var(--fonte-cartas);
+    color: #313131;
+    font-weight: bolder;
+    font-size: 25px;
     background-color: #CDC8C1;
-    width: 14.86px
+    width: 22.86px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .aumentar-level {
@@ -118,13 +127,17 @@ header h1 img{
 }
 
 .level-texto {
-    width: 45.71px;
+    width: 60.71px;
     border-bottom: 1px solid #817462;
     border-top: 1px solid #817462;
     color: #CDC8C1;
     text-align: center;
-    height: 22.86px;
-    padding-top: 2px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 30.86px;
+    font-size: 25px;
+    border-radius: 5px;
 }
 
 .container-imagem {
@@ -132,7 +145,7 @@ header h1 img{
     height: 166px;
     width: 79%;
     position: absolute;
-    top: 21px;
+    top: 35px;
     left: 25px;
 }
 
@@ -146,7 +159,7 @@ header h1 img{
     height: 40px;
     width: 78%;
     position: absolute;
-    top: 125px;
+    top: 108px;
     left: 25px;
 }
 
@@ -154,8 +167,9 @@ header h1 img{
     font-family: var(--fonte-titulo-cartas);
     text-align: center;
     padding: 12px 0;
-    font-weight: 700;
+    font-weight: bolder;
     font-size: 22px;
+    text-transform: uppercase;
 }
 
 .container-nome {
@@ -171,7 +185,7 @@ header h1 img{
     font-size: 24px;
     line-height: 30px;
     text-align: center;
-
+    font-weight: 500;
 }
 
 .container-descricao {
@@ -183,9 +197,9 @@ header h1 img{
 }
 
 .descricao {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 21px;
-    color: #554B40;
+    color: #222222;
     padding: 8px 16px;
 }
 
@@ -203,7 +217,8 @@ header h1 img{
 .mana,
 .vida,
 .insignia {
-    color: #CDC8C1;
+    color: #dfdfdf;
+    text-align: center;
 }
 
 .mana {
@@ -226,7 +241,8 @@ header h1 img{
     grid-area: insignia;
     justify-self: center;
     align-self: center;
-    font-size: 20px;
+    font-size: 22px;
+    font-family: var(--fonte-cartas);
     text-align: center;
 
 }
