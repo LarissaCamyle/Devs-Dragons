@@ -155,12 +155,13 @@ header h1 img{
 
 .container-tipo {
     background-image: url(../img/tarja-azul.png);
-    background-repeat: no-repeat;
+    background-size: cover;
     height: 40px;
-    width: 78%;
+    width: 95%;
     position: absolute;
     top: 108px;
-    left: 25px;
+    left: 5px;
+    border-radius: 20px;
 }
 
 .tipo {
@@ -168,8 +169,7 @@ header h1 img{
     text-align: center;
     padding: 12px 0;
     font-weight: bolder;
-    font-size: 22px;
-    text-transform: uppercase;
+    font-size: 20px;
 }
 
 .container-nome {
@@ -241,7 +241,7 @@ header h1 img{
     grid-area: insignia;
     justify-self: center;
     align-self: center;
-    font-size: 22px;
+    font-size: 17px;
     font-family: var(--fonte-cartas);
     text-align: center;
 

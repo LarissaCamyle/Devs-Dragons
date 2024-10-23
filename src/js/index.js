@@ -1,9 +1,14 @@
 import { Personagem } from "./classePersonagem.js";
 import { PersonagemView } from "./personagem-view.js";
+import { Mago } from "./classeMago.js";
+import { Arqueiro } from "./classeArqueiro.js";
+import { ArqueiroMago } from "./classeArqueiroMago.js";
 
-const personagemPedro = new Personagem('pedro', '10', '7', '6', 'Mago', 'maguinho');
-const personagemJose = new Personagem('jose', '10', '7', '1', 'Arqueiro', 'maguinho');
+const mago = new Mago('Lucas', 9, 'fogo', 9, 5)
+const arqueiro = new Arqueiro('Larissa', 9, 10)
+const arqueiroMago = new ArqueiroMago('Larissa', 4, 10, "Gelo", 10, 20)
 
-const personagens = [personagemPedro, personagemJose]
+
+const personagens = [mago, arqueiro, arqueiroMago]
 
 new PersonagemView(personagens).render()
