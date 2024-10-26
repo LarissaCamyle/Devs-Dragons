@@ -9,9 +9,12 @@
 
 body {
     font-family: var(--fonte-textos);
-    background-image: url(../img/fundo.jpg);
+    background-image: url(../img/fundo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
     height: 100vh;
-    background-position: center;
 }
 
 header,
@@ -61,6 +64,7 @@ header h1 img{
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.527);
     padding: 1rem;
+    margin-bottom: 5rem;
 }
 
 .personagem {
@@ -71,6 +75,8 @@ header h1 img{
 
 .personagem.selecionado {
     transform: translateY(-1.25rem);
+    box-shadow: 2px 5px 30px rgba(255, 246, 116, 0.801);
+    border-radius: 13px;
 }
 
 .container-superior {
